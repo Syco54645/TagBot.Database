@@ -1,5 +1,5 @@
 --
--- File generated with SQLiteStudio v3.3.3 on Fri Nov 12 17:26:55 2021
+-- File generated with SQLiteStudio v3.3.3 on Fri Nov 12 17:33:11 2021
 --
 -- Text encoding used: System
 --
@@ -90,7 +90,7 @@ END;
 
 -- View: database_last_modified
 CREATE VIEW database_last_modified AS
-    SELECT MAX(date)
+    SELECT MAX(date) AS database_last_modified
       FROM (
                SELECT MAX(date_last_modified) AS date
                  FROM song
@@ -105,6 +105,7 @@ CREATE VIEW database_last_modified AS
 
 COMMIT TRANSACTION;
 PRAGMA foreign_keys = on;
+
 
 
 
