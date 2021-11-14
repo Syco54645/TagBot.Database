@@ -146,6 +146,16 @@ INSERT INTO meta (
                      'https://github.com/Syco54645/TagBot.Database'
                  );
 
+INSERT INTO meta (
+                     meta_id,
+                     meta_key,
+                     meta_value
+                 )
+                 VALUES (
+                     3,
+                     'database_name',
+                     'dmb'
+                 );
 
 
 
